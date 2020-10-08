@@ -26,4 +26,30 @@ for i in frase.split():
     aux += 1
     
 frase= frase.replace(' ', '')
+
+#%% Chamando a função splitter e passando como parâmetro a frase correspondente
+combinations = list(splitter(frase))
+combinations = [list(x) for x in combinations]
+
 #%%
+for i in range(0,len(combinations)):
+    for y in range(0, len(combinations[i])):
+        resultado = ""
+        for z in range(0, len(combinations[i][y])):
+            resultado = resultado +dicionario[combinations[i][y][z]] + ' '
+        combinations[i][y] = resultado[0:-1]
+
+#%%
+print('[')
+entrada = '[\'' + entrada +'\']'
+print(entrada)
+for i in combinations:
+    print(i)
+print(']')
+#%%
+for c in (chr(i) for i in range(32,127)):
+    print c
+    
+
+
+
