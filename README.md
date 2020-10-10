@@ -1,4 +1,4 @@
-# Combinaçes
+# Combinações
 
 ## Descrição 
 
@@ -22,4 +22,21 @@ Saída:
 ['eu gosto', 'de', 'café'],
 ['eu', 'gosto', 'de', 'café']
 ]
+```
+
+## Pré-requisitos
+
+* Instalar [Python3+](https://www.python.org/downloads/) 
+
+## Build
+
+Entre na pasta:
+
+```sh
+cd Fragmentando
+```
+
+Abra um terminal e rode o programa:
+```sh
+python3 fragmentando.py
 ```
